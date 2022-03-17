@@ -18,5 +18,7 @@ public class MainMulti {
 
         List<ElectricCar> electricCarList = List.of(tesla, toyota);
         List<FuelCar> fuelCars = List.of(bmw3er, toyota);
+
+        fuelCars.forEach(FuelCar::fuel);
     }
 }
