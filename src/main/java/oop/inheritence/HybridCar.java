@@ -1,4 +1,4 @@
 package oop.inheritence;
 
-public class HybridCar extends Car {
+public interface HybridCar extends ElectricCar, FuelCar {
 }

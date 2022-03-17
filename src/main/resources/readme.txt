@@ -12,3 +12,23 @@ Klassen mit undefinierten Methoden. Informationen verstecken.
 4. Prinzip: Polymorphie
 Vererbte Methoden können überschrieben und dadurch verändert werden. Signaturen können nicht geändert werden.
 
+
+for (Vehicle v : list) {
+    if (v instanceof FuelCar) {
+       (FuelCar)v.fuel();
+    }
+}
+
+list.forEach(v -> {
+  if (v instanceof FuelCar x) {
+     x.fuel();
+  }
+};
+
+Consumer<Vehicle> consumer = v -> {
+      if (v instanceof FuelCar x) {
+         x.fuel();
+      }
+}
+
+list.forEach(consumer);
