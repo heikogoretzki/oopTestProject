@@ -11,3 +11,4 @@ Klassen mit undefinierten Methoden. Informationen verstecken.
 
 4. Prinzip: Polymorphie
 Vererbte Methoden können überschrieben und dadurch verändert werden. Signaturen können nicht geändert werden.
+
