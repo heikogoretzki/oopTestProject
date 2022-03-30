@@ -15,10 +15,9 @@ public class Tree {
         this.height = height;
     }
 
-    public Tree(double height) {
-        this.height = height;
-        this.name = UUID.randomUUID();
-    }
+//    public Tree(double height) {
+//        this.height = height;
+//    }
 
     public String getName() {
         return name;

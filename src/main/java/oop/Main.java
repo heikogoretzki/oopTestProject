@@ -1,9 +1,6 @@
 package oop;
 
 import java.util.List;
-import java.util.function.BiFunction;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
 
 public class Main {
 
@@ -23,11 +20,11 @@ public class Main {
         System.out.println(rectangleOne);
         System.out.println(rectangleTwo);
 
-        Circle circleOne = new Circle(5);
-        Circle circleTwo = new Circle(3);
+        Circle circleOldOne = new Circle(5);
+        Circle circleOldTwo = new Circle(3);
 
-        System.out.println(circleOne);
-        System.out.println(circleTwo);
+        System.out.println(circleOldOne);
+        System.out.println(circleOldTwo);
 
         RightAngleTriangle rightAngleTriangleOne = new RightAngleTriangle(5, 12);
         RightAngleTriangle rightAngleTriangleTwo = new RightAngleTriangle(3, 4);
@@ -35,7 +32,7 @@ public class Main {
         System.out.println(rightAngleTriangleOne);
         System.out.println(rightAngleTriangleTwo);
 
-        List<GeomatricObject> objects = List.of(squareOne, squareTwo, rectangleOne, rectangleTwo, circleOne, circleTwo, rightAngleTriangleOne, rightAngleTriangleTwo);
+        List<GeomatricObject> objects = List.of(squareOne, squareTwo, rectangleOne, rectangleTwo, circleOldOne, circleOldTwo, rightAngleTriangleOne, rightAngleTriangleTwo);
 
         double sum = objects.stream()
                 .mapToDouble(GeomatricObject::getArea) // Methodenreferenz Lambda-Expression
@@ -43,7 +40,7 @@ public class Main {
                 .sum();
         System.out.println("Summe Flächeninhalt: " + sum);
 
-        List<GeomObject2D> interfaceObjets = List.of(squareOne, squareTwo, rectangleOne, rectangleTwo, circleOne, circleTwo, rightAngleTriangleOne, rightAngleTriangleTwo);
+        List<GeomObject2D> interfaceObjets = List.of(squareOne, squareTwo, rectangleOne, rectangleTwo, circleOldOne, circleOldTwo, rightAngleTriangleOne, rightAngleTriangleTwo);
 
         double sumPetimeter = objects.stream()
                 .mapToDouble(GeomObject2D::getPerimeter) // Methodenreferenz Lambda-Expression
